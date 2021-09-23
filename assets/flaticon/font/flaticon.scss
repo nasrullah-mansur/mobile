@@ -1,0 +1,45 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("./flaticon.ttf?dda327a964e12513e91658c38204bcd2") format("truetype"),
+url("./flaticon.woff?dda327a964e12513e91658c38204bcd2") format("woff"),
+url("./flaticon.woff2?dda327a964e12513e91658c38204bcd2") format("woff2"),
+url("./flaticon.eot?dda327a964e12513e91658c38204bcd2#iefix") format("embedded-opentype"),
+url("./flaticon.svg?dda327a964e12513e91658c38204bcd2#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon-map: (
+    "left-arrow": "\f101",
+    "play-button": "\f102",
+    "heart": "\f103",
+    "menu": "\f104",
+    "speaker-filled-audio-tool": "\f105",
+);
+
+.flaticon-left-arrow:before {
+    content: map-get($flaticon-map, "left-arrow");
+}
+.flaticon-play-button:before {
+    content: map-get($flaticon-map, "play-button");
+}
+.flaticon-heart:before {
+    content: map-get($flaticon-map, "heart");
+}
+.flaticon-menu:before {
+    content: map-get($flaticon-map, "menu");
+}
+.flaticon-speaker-filled-audio-tool:before {
+    content: map-get($flaticon-map, "speaker-filled-audio-tool");
+}

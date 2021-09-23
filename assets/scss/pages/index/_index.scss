@@ -1,0 +1,35 @@
+.cards {
+    .item {
+        @include background;
+        margin-bottom: 30px;
+        display: flex;
+        justify-content: space-between;
+        height: 282px;
+        align-items: center;
+        padding: 20px 30px 25px 50px;
+        border-radius: 15px;
+
+        .text {
+            
+
+            h2 {
+                font-size: 42px;
+                letter-spacing: .38px;
+                font-weight: 700;
+                color: $white;
+                padding-bottom: 18px;
+            }
+
+            .description {
+                padding-bottom: 20px;
+
+                p {
+                    font-size: 40px;
+                    line-height: 50px;
+                    color: $white;
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,392 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #020202;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #eee;
+}
+
+main {
+  padding-bottom: 30px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+
+iframe {
+  border: none;
+}
+
+a,
+b,
+div,
+ul,
+li {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
+  -moz-outline-: none;
+}
+
+input,
+input:hover,
+input:focus,
+input:active,
+textarea,
+textarea:hover,
+textarea:focus,
+textarea:active,
+select:focus,
+select:hover {
+  -moz-outline: none;
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+img:not([draggable]),
+embed,
+object,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  outline: 0;
+}
+
+a:active,
+a:focus,
+a:hover,
+a:visited {
+  text-decoration: none;
+  outline: 0;
+}
+
+:focus {
+  outline: none;
+}
+
+img {
+  border: none;
+  max-width: 100%;
+  height: auto;
+}
+
+button:focus {
+  -moz-outline: none;
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.btn.focus, .btn:focus {
+  border: 1px solid transparent;
+}
+
+.form-control:focus,
+.btn.focus, .btn:focus {
+  color: inherit;
+  background-color: #ffffff;
+  outline: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+a:focus {
+  outline: 0px solid;
+}
+
+.fix {
+  overflow: hidden;
+}
+
+p {
+  margin: 0 0 24px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: #F7B267;
+  text-decoration: none;
+}
+
+a:active, a:hover {
+  outline: 0 none;
+  color: #8989FF;
+}
+
+ul {
+  list-style: outside none none;
+  margin: 0;
+  padding: 0;
+}
+
+::-moz-selection {
+  background: #F7B267;
+  text-shadow: none;
+}
+
+::selection {
+  background: #F7B267;
+  text-shadow: none;
+  color: #ffffff;
+}
+
+.white-center,
+.container {
+  max-width: 768px;
+  margin: 0 auto;
+  padding-left: 6%;
+  padding-right: 6%;
+  background-color: #ffffff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.img-fluid {
+  width: 100%;
+  max-width: 100%;
+}
+
+.h-100 {
+  height: 100% !important;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.btn-blue {
+  display: inline-block;
+  width: 145px;
+  height: 53px;
+  border-radius: 6px;
+  text-align: center;
+  line-height: 53px;
+  font-size: 22px;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: #6464B4;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.btn-blue:hover {
+  color: #ffffff;
+  opacity: .9;
+}
+
+.btn-orange {
+  display: inline-block;
+  width: 145px;
+  height: 53px;
+  border-radius: 6px;
+  text-align: center;
+  line-height: 53px;
+  font-size: 22px;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: #FFB96D;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.btn-orange:hover {
+  color: #ffffff;
+  opacity: .9;
+}
+
+.btn-white {
+  position: relative;
+  display: inline-block;
+  width: 175px;
+  height: 125px;
+  background-color: #ffffff;
+  -webkit-box-shadow: 1.25753px 1.25753px 25.1506px rgba(0, 0, 0, 0.2);
+          box-shadow: 1.25753px 1.25753px 25.1506px rgba(0, 0, 0, 0.2);
+  border-radius: 30.5641px;
+  margin: 0 20px;
+}
+
+.btn-white i {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 65px;
+  color: #F7B267;
+}
+
+.page-title-1 h1 {
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: 600;
+  padding-bottom: 8px;
+}
+
+.page-title-1 h1 span {
+  font-weight: 700;
+  color: #8989FF;
+}
+
+.page-title-1 h3 {
+  padding-bottom: 25px;
+}
+
+.header {
+  padding-top: 25px;
+  padding-bottom: 50px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header .back-arrow i {
+  font-size: 18px;
+}
+
+.header .nav i {
+  font-size: 20px;
+}
+
+.header a {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  color: #020202;
+}
+
+.header a:hover {
+  color: #F7B267;
+}
+
+.cards .item {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 282px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 30px 25px 50px;
+  border-radius: 15px;
+}
+
+.cards .item .text h2 {
+  font-size: 42px;
+  letter-spacing: .38px;
+  font-weight: 700;
+  color: #ffffff;
+  padding-bottom: 18px;
+}
+
+.cards .item .text .description {
+  padding-bottom: 20px;
+}
+
+.cards .item .text .description p {
+  font-size: 40px;
+  line-height: 50px;
+  color: #ffffff;
+  margin-bottom: 0;
+}
+
+.sloth {
+  position: relative;
+  height: 570px;
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 50px 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.sloth h1 {
+  font-size: 62px;
+  color: #ffffff;
+  padding-bottom: 40px;
+  text-shadow: 5px 0 0 rgba(0, 0, 0, 0.3);
+}
+
+.sloth a {
+  color: #ffffff;
+  display: inline-block;
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+  z-index: 99;
+  font-size: 40px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  text-shadow: 3px 0 0 rgba(0, 0, 0, 0.3);
+}
+
+.sloth a:hover {
+  color: #F7B267;
+}
+
+.sloth-description {
+  padding-top: 25px;
+  padding-bottom: 50px;
+}
+
+.sloth-description h2 {
+  font-size: 28px;
+  line-height: 38px;
+  letter-spacing: .6px;
+  font-weight: 400;
+}
+
+.sloth-description h2 span {
+  font-weight: 700;
+  color: #8989FF;
+}
