@@ -199,6 +199,15 @@ ul {
   opacity: .9;
 }
 
+@media (max-width: 575px) {
+  .btn-blue {
+    width: 78px;
+    height: 28px;
+    line-height: 28px;
+    font-size: 12px;
+  }
+}
+
 .btn-orange {
   display: inline-block;
   width: 145px;
@@ -219,15 +228,24 @@ ul {
   opacity: .9;
 }
 
+@media (max-width: 575px) {
+  .btn-orange {
+    width: 78px;
+    height: 28px;
+    line-height: 28px;
+    font-size: 12px;
+  }
+}
+
 .btn-white {
   position: relative;
   display: inline-block;
   width: 175px;
   height: 125px;
   background-color: #ffffff;
-  -webkit-box-shadow: 1.25753px 1.25753px 25.1506px rgba(0, 0, 0, 0.2);
-          box-shadow: 1.25753px 1.25753px 25.1506px rgba(0, 0, 0, 0.2);
-  border-radius: 30.5641px;
+  -webkit-box-shadow: 1px 1px 15px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 1px 1px 15px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 30px;
   margin: 0 20px;
 }
 
@@ -241,9 +259,21 @@ ul {
   color: #F7B267;
 }
 
+@media (max-width: 575px) {
+  .btn-white {
+    width: 108px;
+    height: 77px;
+    margin: 0 15px;
+    border-radius: 15px;
+  }
+  .btn-white i {
+    font-size: 42px;
+  }
+}
+
 .page-title-1 h1 {
-  font-size: 30px;
-  line-height: 40px;
+  font-size: 48px;
+  line-height: 58px;
   font-weight: 600;
   padding-bottom: 8px;
 }
@@ -254,7 +284,20 @@ ul {
 }
 
 .page-title-1 h3 {
+  font-size: 28px;
+  line-height: 38px;
   padding-bottom: 25px;
+}
+
+@media (max-width: 575px) {
+  .page-title-1 h1 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .page-title-1 h3 {
+    font-size: 16px;
+    line-height: 26px;
+  }
 }
 
 .header {
@@ -315,6 +358,7 @@ ul {
   font-weight: 700;
   color: #ffffff;
   padding-bottom: 18px;
+  white-space: nowrap;
 }
 
 .cards .item .text .description {
@@ -322,10 +366,30 @@ ul {
 }
 
 .cards .item .text .description p {
-  font-size: 40px;
-  line-height: 50px;
+  font-size: 25px;
+  line-height: 35px;
   color: #ffffff;
   margin-bottom: 0;
+  padding-right: 20px;
+}
+
+@media (max-width: 575px) {
+  .cards .item {
+    height: 152px;
+    padding: 20px 15px 15px 30px;
+  }
+  .cards .item .text h2 {
+    font-size: 22px;
+    padding-bottom: 0;
+    line-height: 32px;
+  }
+  .cards .item .text .description {
+    padding-bottom: 10px;
+  }
+  .cards .item .text .description p {
+    font-size: 16px;
+    line-height: 26px;
+  }
 }
 
 .sloth {
@@ -374,6 +438,20 @@ ul {
   color: #F7B267;
 }
 
+@media (max-width: 575px) {
+  .sloth {
+    width: 100%;
+    height: auto;
+  }
+  .sloth h1 {
+    font-size: 34px;
+    padding-bottom: 20px;
+  }
+  .sloth img {
+    max-height: 215px;
+  }
+}
+
 .sloth-description {
   padding-top: 25px;
   padding-bottom: 50px;
@@ -389,4 +467,11 @@ ul {
 .sloth-description h2 span {
   font-weight: 700;
   color: #8989FF;
+}
+
+@media (max-width: 575px) {
+  .sloth-description h2 {
+    font-size: 18px;
+    line-height: 28px;
+  }
 }

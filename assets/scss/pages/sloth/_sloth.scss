@@ -31,6 +31,20 @@
             color: $primary-color;
         }
     }
+
+    @media (max-width: 575px) {
+        width: 100%;
+        height: auto;
+
+        h1 {
+            font-size: 34px;
+            padding-bottom: 20px;
+        }
+
+        img {
+            max-height: 215px;
+        }
+    }
 }
 
 .sloth-description {
@@ -48,8 +62,11 @@
             color: $color-two;
         }
     }
-}
 
-.btn-area {
-
+    @media (max-width: 575px) {
+        h2 {
+            font-size: 18px;
+            line-height: 28px;
+        }
+    }
 }
