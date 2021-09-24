@@ -2,11 +2,11 @@ $flaticon-font: "flaticon";
 
 @font-face {
     font-family: $flaticon-font;
-    src: url("./flaticon.ttf?d6d680f4d7075de4974534f9e96ee186") format("truetype"),
-url("./flaticon.woff?d6d680f4d7075de4974534f9e96ee186") format("woff"),
-url("./flaticon.woff2?d6d680f4d7075de4974534f9e96ee186") format("woff2"),
-url("./flaticon.eot?d6d680f4d7075de4974534f9e96ee186#iefix") format("embedded-opentype"),
-url("./flaticon.svg?d6d680f4d7075de4974534f9e96ee186#flaticon") format("svg");
+    src: url("./flaticon.ttf?dda327a964e12513e91658c38204bcd2") format("truetype"),
+url("./flaticon.woff?dda327a964e12513e91658c38204bcd2") format("woff"),
+url("./flaticon.woff2?dda327a964e12513e91658c38204bcd2") format("woff2"),
+url("./flaticon.eot?dda327a964e12513e91658c38204bcd2#iefix") format("embedded-opentype"),
+url("./flaticon.svg?dda327a964e12513e91658c38204bcd2#flaticon") format("svg");
 }
 
 i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
@@ -26,7 +26,6 @@ $flaticon-map: (
     "heart": "\f103",
     "menu": "\f104",
     "speaker-filled-audio-tool": "\f105",
-    "like": "\f106",
 );
 
 .flaticon-left-arrow:before {
@@ -43,7 +42,4 @@ $flaticon-map: (
 }
 .flaticon-speaker-filled-audio-tool:before {
     content: map-get($flaticon-map, "speaker-filled-audio-tool");
-}
-.flaticon-like:before {
-    content: map-get($flaticon-map, "like");
 }

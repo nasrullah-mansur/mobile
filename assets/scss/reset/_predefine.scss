@@ -155,8 +155,8 @@ ul{
 .container {
     max-width: 768px;
     margin: 0 auto;
-    padding-left: 6%;
-    padding-right: 6%;
+    padding-left: 94px;
+    padding-right: 94px;
     background-color: $white;
     box-sizing: border-box;
 }
@@ -170,37 +170,67 @@ ul{
     height: 100% !important;
 }
 
+.pt-50 {
+    padding-top: 50px;
+
+    @media (max-width: 575px) {
+        padding-top: 38px;
+    }
+}
+
+.pb-0 {
+    padding-bottom: 0;
+}
+
 .text-center {
     text-align: center;
 }
 
-.btn-blue {
-    display: inline-block;
-    width: 145px;
-    height: 53px;
-    border-radius: 6px;
-    text-align: center;
-    line-height: 53px;
-    font-size: 22px;
-    font-weight: 600;
-    color: $white;
-    background-color: $btn-blue;
-    transition: $transition;
-
-    &:hover {
-        color: $white;
-        opacity: .9;
-    }
-
-    @media (max-width: 575px) {
-        width: 78px;
-        height: 28px;
-        line-height: 28px;
-        font-size: 12px;
-    }
+.text-green {
+    color: $color-green;
 }
 
-.btn-orange {
+.text-blue {
+    color: $color-blue;
+}
+
+.text-orange {
+    color: $color-orange;
+}
+
+.text-red {
+    color: $color-red;
+}
+
+.text-blue-light {
+    color: $color-blue-light;
+}
+
+.bg-green {
+    background-color: $color-green;
+}
+
+.bg-blue {
+    background-color: $color-blue;
+}
+
+.bg-orange {
+    background-color: $color-orange;
+}
+
+.bg-red {
+    background-color: $color-red;
+}
+
+.bg-blue-light {
+    background-color: $color-blue-light;
+}
+
+.bg-red-light {
+    background-color: $color-red-light;
+}
+
+.btn {
     display: inline-block;
     width: 145px;
     height: 53px;
@@ -210,7 +240,6 @@ ul{
     font-size: 22px;
     font-weight: 600;
     color: $white;
-    background-color: $btn-orange;
     transition: $transition;
 
     &:hover {
@@ -220,8 +249,8 @@ ul{
 
     @media (max-width: 575px) {
         width: 78px;
-        height: 28px;
-        line-height: 28px;
+        height: 32px;
+        line-height: 32px;
         font-size: 12px;
     }
 }
@@ -285,6 +314,54 @@ ul{
         h3 {
             font-size: 16px;
             line-height: 26px;
+        }
+    }
+}
+
+.page-title-2 {
+    h1 {
+        font-size: 68px;
+        line-height: 78px;
+        padding-bottom: 32px;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    @media (max-width: 575px) {
+        h1 {
+            font-size: 42px;
+            line-height: 52px;
+            padding-bottom: 22px;
+        }
+    }
+}
+
+.page-title-3 {
+    h1 {
+        font-size: 40px;
+        font-weight: 300;
+        line-height: 50px;
+        display: flex;
+        align-items: center;
+        letter-spacing: .8px;
+        padding-bottom: 55px;
+
+        i {
+            display: block;
+            line-height: 0;
+            font-size: 30px;
+            padding-left: 15px;
+        }
+
+        &.text-center {
+            justify-content: center;
+        }
+    }
+
+    @media (max-width: 575px) {
+        h1 {
+            padding-bottom: 35px;
+            font-size: 30px;
         }
     }
 }
