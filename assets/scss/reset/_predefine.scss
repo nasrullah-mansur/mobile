@@ -159,6 +159,17 @@ ul{
     padding-right: 94px;
     background-color: $white;
     box-sizing: border-box;
+
+    @media (max-width: 575px) {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+}
+
+@media (max-width: 575px) {
+    .pr-sm-25 {
+        padding-right: 25px;
+    }
 }
 
 .img-fluid {
@@ -194,6 +205,10 @@ ul{
     color: $color-blue;
 }
 
+.text-blue-light {
+    color: $color-blue-light;
+}
+
 .text-orange {
     color: $color-orange;
 }
@@ -202,8 +217,8 @@ ul{
     color: $color-red;
 }
 
-.text-blue-light {
-    color: $color-blue-light;
+.text-red-light {
+    color: $color-red-light;
 }
 
 .bg-green {
@@ -214,16 +229,16 @@ ul{
     background-color: $color-blue;
 }
 
+.bg-blue-light {
+    background-color: $color-blue-light;
+}
+
 .bg-orange {
     background-color: $color-orange;
 }
 
 .bg-red {
     background-color: $color-red;
-}
-
-.bg-blue-light {
-    background-color: $color-blue-light;
 }
 
 .bg-red-light {
